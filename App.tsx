@@ -1,12 +1,10 @@
-import { StatusBar } from 'expo-status-bar'
-import { View } from 'react-native'
-import { Home } from './src/screens/Home'
-
+import { ThemeProvider } from 'styled-components/native'
+import { Home } from '@screens/Home'
+import theme from '@styles/theme'
 export default function App() {
   return (
-    <View>
+    <ThemeProvider theme={theme}>
       <Home />
-      <StatusBar style="auto" />
-    </View>
+    </ThemeProvider>
   )
 }
