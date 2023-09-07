@@ -4,7 +4,7 @@ import { Home } from './src/screens/Home'
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View>
       <Home />
       <StatusBar style="auto" />
     </View>
