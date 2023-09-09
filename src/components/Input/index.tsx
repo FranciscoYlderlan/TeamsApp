@@ -1,14 +1,13 @@
 import { Container, InputText, Icon, Submit } from './styles'
 
 interface inputProps {
-  showIcon?: boolean
-  text: string
+  showButton?: boolean
 }
-export function Input({ showIcon = false, search }: inputProps) {
+export function Input({ showButton = false, ...rest }: inputProps) {
   return (
     <Container>
-      <InputText>{search}</InputText>
-      {showIcon && (
+      <InputText {...rest} />
+      {showButton && (
         <Submit>
           <Icon />
         </Submit>
