@@ -5,8 +5,7 @@ interface inputProps {
 }
 export function Input({ showButton = false, ...rest }: inputProps) {
   return (
-    <Container>
-      <InputText {...rest} />
+    <Container {...rest}>
       {showButton && (
         <Submit>
           <Icon />

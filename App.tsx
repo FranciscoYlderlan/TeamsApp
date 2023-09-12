@@ -1,6 +1,8 @@
 /* eslint-disable camelcase */
 import { ThemeProvider } from 'styled-components/native'
 import { Home } from '@screens/Home'
+import { Teams } from '@screens/Teams'
+import { Create } from '@screens/Create'
 import { theme } from '@styles/theme'
 import { Loading } from '@components/Loading'
 import { StatusBar } from 'expo-status-bar'
@@ -14,8 +16,8 @@ export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold })
   return (
     <ThemeProvider theme={theme}>
-      {fontsLoaded ? <Home /> : <Loading />}
-      <StatusBar translucent style="light" />
+      {fontsLoaded ? <Teams /> : <Loading />}
+      <StatusBar translucent style="light" backgroundColor="transparent" />
     </ThemeProvider>
   )
 }

@@ -7,7 +7,8 @@ export const Container = styled.View`
 export const Title = styled.Text`
   font-style: normal;
   font-weight: 700;
-  font-size: ${({ theme }) => theme.FONT_SIZE.XL};
+
+  font-size: ${({ theme }) => theme.FONT_SIZE.XL}px;
   color: ${({ theme }) => theme.COLORS.WHITE};
   font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
 `
@@ -15,7 +16,8 @@ export const Title = styled.Text`
 export const Description = styled.Text`
   font-style: normal;
   font-weight: 400;
-  font-size: ${({ theme }) => theme.FONT_SIZE.MD};
+
+  font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   color: ${({ theme }) => theme.COLORS.GRAY_300};
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
 `
