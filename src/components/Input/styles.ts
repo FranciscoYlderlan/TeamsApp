@@ -3,7 +3,7 @@ import { styled } from 'styled-components/native'
 export const Container = styled.TextInput.attrs(({ theme }) => ({
   placeholderTextColor: theme.COLORS.GRAY_200,
 }))`
-  width: 100%;
+  flex: 1;
   background-color: ${({ theme }) => theme.COLORS.GRAY_700};
   color: ${({ theme }) => theme.COLORS.WHITE};
   border-radius: 6px;

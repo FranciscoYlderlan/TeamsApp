@@ -1,9 +1,16 @@
-import { Container, Title } from './styles.ts'
+import { TouchableOpacityProps } from 'react-native'
 
-export function Tab() {
+import { Container, Title, FilterStyleProps } from './styles.ts'
+
+type TabProps = TouchableOpacityProps &
+  FilterStyleProps & {
+    title: string
+  }
+
+export function Tab({ title, isActive = false, ...rest }: TabProps) {
   return (
-    <Container>
-      <Title></Title>
+    <Container isActive={isActive} {...rest}>
+      <Title>{title}</Title>
     </Container>
   )
 }

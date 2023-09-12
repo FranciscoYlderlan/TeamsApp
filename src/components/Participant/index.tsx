@@ -1,5 +1,5 @@
 import { Ionicons } from '@expo/vector-icons'
-import { Container, CrossIcon, Name } from './styles'
+import { Container, CrossIcon, Name, Content, DeleteButton } from './styles'
 import CrossIconImg from '@assets/cross-icon.png'
 interface participantProps {
   name: string
@@ -8,9 +8,13 @@ interface participantProps {
 export function Participant({ name }: participantProps) {
   return (
     <Container>
-      <Ionicons name="md-person-sharp" size={24} color="white" />
-      <Name>{name}</Name>
-      <CrossIcon source={CrossIconImg} />
+      <Content>
+        <Ionicons name="md-person-sharp" size={24} color="#c4c4cc" />
+        <Name>{name}</Name>
+      </Content>
+      <DeleteButton>
+        <CrossIcon source={CrossIconImg} />
+      </DeleteButton>
     </Container>
   )
 }
